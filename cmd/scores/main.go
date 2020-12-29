@@ -5,6 +5,7 @@ import (
 	"os"
 	"os/signal"
 
+	"github.com/Bethos05/Snake-api-rest/internal/data"
 	"github.com/Bethos05/Snake-api-rest/internal/server"
 
 	_ "github.com/joho/godotenv/autoload"
@@ -18,6 +19,12 @@ func main() {
 		log.Fatal(err)
 	}
 
+	// connection to the database.
+	d := data.New()
+	if err := d.DB.Ping(); err != nil {
+		log.Fatal(err)
+	}
+
 	// start the server.
 	go serv.Start()
 
@@ -28,4 +35,5 @@ func main() {
 
 	// Attempt a graceful shutdown.
 	serv.Close()
+	data.Close()
 }
