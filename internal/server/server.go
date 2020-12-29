@@ -17,6 +17,8 @@ type Server struct {
 func New(port string) (*Server, error) {
 	r := chi.NewRouter()
 
+	r.Mount("/api", NewApi())
+
 	serv := &http.Server{
 		Addr:         ":" + port,
 		Handler:      r,
