@@ -39,7 +39,7 @@ var Game_Over = new Phaser.Class({
         this.add.text(150, 200, 'ENTER YOUR NAME:', { font: "bold 16px sans-serif", fill: '#70F81F', align: "center" });
 
         //Name entry
-        textEntry = this.add.text(320, 210, '', { font: "bold 16px sans-serif", fill: "#fff", align: "center" });
+        textEntry = this.add.text(320, 200, '', { font: "bold 16px sans-serif", fill: "#fff", align: "center" });
 
         //Name entry logic
         this.input.keyboard.on('keydown', function (event) {

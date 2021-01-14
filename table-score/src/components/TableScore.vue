@@ -1,15 +1,20 @@
 <template>
   <v-card>
+     
     <v-card-title>
       Snake Score
       <v-spacer></v-spacer>
-      <v-text-field
+      <v-btn class="mx-2" fab dark small color="pink" @click="getPlayers">
+          <v-icon dark>mdi-refresh</v-icon>
+      </v-btn>
+      <v-text-field 
         v-model="search"
         append-icon="mdi-magnify"
         label="Search: "
         single-line
         hide-details
       ></v-text-field>
+      
     </v-card-title>
     <v-data-table class="data-table"
       :headers="headers"
@@ -57,16 +62,20 @@ export default {
 
 <style>
     .v-card__title {
-      BACKGROUND: rgb(6, 1, 27);
-      color: rgb(112,248,31);
+      background: rgb(71,251,255);
+      color:rgb(6, 1, 27);
     } 
 
-    label.v-label.theme--light {
+    /* label.v-label.theme--light {
       color:antiquewhite
-    } 
+    }  */
 
     span{
       font-size: large;
       color:rgb(6, 1, 27);
     }
+
+  .theme--light.v-input input, .theme--light.v-input textarea {
+    color:antiquewhite
+  }
 </style>
