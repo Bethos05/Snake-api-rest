@@ -36,6 +36,8 @@ func (pl *PlayerRouter) CreateHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func (pl *PlayerRouter) GetAllHandler(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+
 	ctx := r.Context()
 
 	players, err := pl.Repository.GetAll(ctx)
