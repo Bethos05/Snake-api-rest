@@ -6,7 +6,7 @@
       <v-text-field
         v-model="search"
         append-icon="mdi-magnify"
-        label="Search"
+        label="Search: "
         single-line
         hide-details
       ></v-text-field>
@@ -30,7 +30,7 @@ export default {
     return {
       search: "",
       headers: [
-        { text: 'Nick Name', value: 'nickname'},
+        { text: 'Nick Name', value: 'nickname', sortable: false,},
         { text: 'Score', value: 'score' },
       ],
       players: [],
@@ -56,7 +56,17 @@ export default {
 </script>
 
 <style>
-    .v-card-title{
-        background: aqua;
+    .v-card__title {
+      BACKGROUND: rgb(6, 1, 27);
+      color: rgb(112,248,31);
+    } 
+
+    label.v-label.theme--light {
+      color:antiquewhite
+    } 
+
+    span{
+      font-size: large;
+      color:rgb(6, 1, 27);
     }
 </style>
