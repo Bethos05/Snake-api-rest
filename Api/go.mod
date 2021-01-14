@@ -1,4 +1,4 @@
-module github.com/Bethos05/Snake-api-rest
+module github.com/Bethos05/Snake-api-rest/Api
 
 go 1.15
 

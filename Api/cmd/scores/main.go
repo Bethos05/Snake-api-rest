@@ -5,8 +5,8 @@ import (
 	"os"
 	"os/signal"
 
-	"github.com/Bethos05/Snake-api-rest/internal/data"
-	"github.com/Bethos05/Snake-api-rest/internal/server"
+	"github.com/Bethos05/Snake-api-rest/Api/internal/data"
+	"github.com/Bethos05/Snake-api-rest/Api/internal/server"
 
 	_ "github.com/joho/godotenv/autoload"
 )

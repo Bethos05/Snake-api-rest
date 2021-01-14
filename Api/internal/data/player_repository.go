@@ -3,7 +3,7 @@ package data
 import (
 	"context"
 
-	"github.com/Bethos05/Snake-api-rest/pkg/player"
+	"github.com/Bethos05/Snake-api-rest/Api/pkg/player"
 )
 
 type PlayerRepository struct {

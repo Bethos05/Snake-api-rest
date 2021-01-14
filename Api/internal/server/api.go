@@ -3,7 +3,7 @@ package server
 import (
 	"net/http"
 
-	"github.com/Bethos05/Snake-api-rest/internal/data"
+	"github.com/Bethos05/Snake-api-rest/Api/internal/data"
 	"github.com/go-chi/chi"
 )
 

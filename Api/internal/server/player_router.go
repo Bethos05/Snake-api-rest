@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/Bethos05/Snake-api-rest/pkg/player"
-	"github.com/Bethos05/Snake-api-rest/pkg/response"
+	"github.com/Bethos05/Snake-api-rest/Api/pkg/player"
+	"github.com/Bethos05/Snake-api-rest/Api/pkg/response"
 	"github.com/go-chi/chi"
 )
 
